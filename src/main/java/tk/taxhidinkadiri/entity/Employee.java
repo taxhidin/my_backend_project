@@ -8,111 +8,151 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="employee")
+@Table(name = "employee")
 public class Employee {
 
-	// define fields
-	
-	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	@Column(name="id")
-	private int id;
-	
-	@Column(name="first_name")
-	private String firstName;
-	
-	@Column(name="last_name")
-	private String lastName;
-	
-	@Column(name="email")
-	private String email;
+    // define fields
 
-	@Column(name="category")
-	private String category;
-	
-		
-	// define constructors
-	
-	public Employee() {
-		
-	}
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
+    private int id;
 
-	public Employee(String firstName, String lastName, String email) {
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.email = email;
-	}
+    @Column(name = "first_name")
+    private String firstName;
 
-	public Employee(String firstName, String lastName, String email, String category) {
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.email = email;
-		this.category = category;
-	}
+    @Column(name = "last_name")
+    private String lastName;
 
-	public Employee(int id, String firstName, String lastName, String email, String category) {
-		this.id = id;
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.email = email;
-		this.category = category;
-	}
+    @Column(name = "email")
+    private String email;
 
-	// define getter/setter
-	
-	public int getId() {
-		return id;
-	}
+    @Column(name = "category")
+    private String category;
 
-	public void setId(int id) {
-		this.id = id;
-	}
+    @Column(name = "city")
+    private String city;
 
-	public String getFirstName() {
-		return firstName;
-	}
+    @Column(name = "state")
+    private String state;
 
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
-	}
-
-	public String getLastName() {
-		return lastName;
-	}
-
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
-	}
-
-	public String getEmail() {
-		return email;
-	}
-
-	public void setEmail(String email) {
-		this.email = email;
-	}
-
-	public String getCategory() {
-		return category;
-	}
-
-	public void setCategory(String category) {
-		this.category = category;
-	}
-
-	// define tostring
+    @Column(name = "country")
+    private String country;
 
 
-	@Override
-	public String toString() {
-		return "Employee{" +
-				"id=" + id +
-				", firstName='" + firstName + '\'' +
-				", lastName='" + lastName + '\'' +
-				", email='" + email + '\'' +
-				", category='" + category + '\'' +
-				'}';
-	}
+    // define constructors
+
+    public Employee() {
+
+    }
+
+    public Employee(String firstName, String lastName, String email) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+    }
+
+    public Employee(String firstName, String lastName, String email, String category) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.category = category;
+    }
+
+    public Employee(int id, String firstName, String lastName, String email, String category, String city, String country, String state) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.category = category;
+        this.city = city;
+        this.country = country;
+        this.state = state;
+    }
+
+// define getter/setter
+
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", email='" + email + '\'' +
+                ", category='" + category + '\'' +
+                ", city='" + city + '\'' +
+                ", state='" + state + '\'' +
+                ", country='" + country + '\'' +
+                '}';
+    }
+
+
 }
 
 
