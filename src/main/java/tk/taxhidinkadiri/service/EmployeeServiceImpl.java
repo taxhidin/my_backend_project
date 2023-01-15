@@ -46,22 +46,6 @@ public class EmployeeServiceImpl implements EmployeeService {
         employeeDAO.deleteById(theId);
     }
 
-/*	@Override
-	@Transactional
-	public Employee addOrder(Employee employee) {
-		return employeeDAO.addOrder(employee);
-	}*/
-
-/*		@Override
-	public int findContact_string(String employee) {
-		return employeeDAO.findContact_string(employee);
-	}
-
-	@Override
-	public int findContact_employee(Employee employee) {
-		return employeeDAO.findContact_employee(employee);
-	}*/
-
 
 }
 

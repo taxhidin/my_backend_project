@@ -46,17 +46,15 @@ public class Employee {
 
     }
 
-    public Employee(String firstName, String lastName, String email) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.email = email;
-    }
 
-    public Employee(String firstName, String lastName, String email, String category) {
+    public Employee(int id, String firstName, String lastName, String email, String city, String state, String country) {
+        this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
-        this.category = category;
+        this.city = city;
+        this.state = state;
+        this.country = country;
     }
 
     public Employee(int id, String firstName, String lastName, String email, String category, String city, String country, String state) {

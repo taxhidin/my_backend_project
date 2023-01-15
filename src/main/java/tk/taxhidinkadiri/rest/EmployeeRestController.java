@@ -95,24 +95,6 @@ public class EmployeeRestController {
     }
 
 
-
-/*		@GetMapping("/employees/{firstname}")
-	public Employee get_first_name(@PathVariable String firstname) {
-
-*//*		int theEmployee_1 = employeeService.findContact_string(firstname);
-
-		if (theEmployee_1 == 0) {
-			throw new RuntimeException("Employee name not found - " + firstname);
-		}
-
-		return getEmployee(theEmployee_1);*//*
-		 List <Employee> employeeList = employeeDAOHibernate.find_all_1();
-
-		 return employeeList.get(findAll().indexOf(firstname));
-
-	}*/
-
-
 }
 
 

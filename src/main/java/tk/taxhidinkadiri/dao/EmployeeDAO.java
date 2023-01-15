@@ -14,10 +14,5 @@ public interface EmployeeDAO {
 
     public void deleteById(int theId);
 
-    //public Employee addOrder(Employee employee);
-
-/*	public int findContact_string(String employee);
-
-	public int findContact_employee(Employee employee);*/
 
 }
